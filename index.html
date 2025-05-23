@@ -1,113 +1,218 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My GitHub Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center; /* Center all content */
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-        }
-        h1, h2 {
-            margin-bottom: 0.5em;
-        }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 800px; /* Set a maximum width for sections */
-            margin-left: auto; /* Center horizontally */
-            margin-right: auto; /* Center horizontally */
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        /* Styling the contact information in a line */
-        .contact-info {
-            display: flex;
-            justify-content: center; /* Align items horizontally in the center */
-            gap: 20px; /* Space between the items */
-            margin-top: 20px;
-        }
-        .contact-info li {
-            list-style: none;
-            display: inline-block;
-        }
-        
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ahmad Abraham | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .brand-title {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    .showcase {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: start;
+    }
+    .showcase-img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    }
+    .icon-links a {
+      color: #000;
+      margin-right: 15px;
+      font-size: 1.5rem;
+    }
+    .project-img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .portfolio-project img {
+  border: 3px solid black;
+  border-radius: 8px;
+}
+
+  </style>
 </head>
 <body>
 
-<header>
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is my personal portfolio showcasing my work!</p>
-</header>
-
-<section>
-    <h2>Contact Information</h2>
-    <ul class="contact-info">
-        <li>Email: ahmadabra0621@gmail.com</li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/AhmadAbraham/" target="_blank">AhmadAbraham</a></li>
-        <li>GitHub: <a href="https://github.com/ahmadabracadabra" target="_blank">ahmadabracadabra</a></li>
-    </ul>
-</section>
-
-<section>
-    <h2>About Me</h2>
-    <p>Hi, I'm Ahmad! I am currently a student at Saint Xavier University and planning to graudate in May 2025.
-        As you may have observed from my profile, I have a deep passion for Computer Science and am actively pursuing career 
-        opportunities within the tech industry. I am eager to apply my knowledge and skills in a professional setting to 
-        contribute meaningfully to innovative projects.
-In addition to my professional interests, I am also deeply engaged in several personal pursuits that help nurture my creativity 
-and analytical abilities. These include gardening, where I enjoy cultivating and studying plant life, as well as video and photo editing, 
-which allows me to 
-explore my creative expression. I am also passionate about graphic design, constantly seeking to refine my visual
- communication skills, and I maintain a strong interest in budgeting and financial planning, which enhances my organizational and problem-solving capabilities.
-    </p>
-</section>
-
-<section>
-    <h2>Github Repositories</h2>
-    <ul> 
-        <li><a href="https://github.com/ahmadabracadabra/DataStructures" target="_blank">Data Structures and Algorithms</a></li>
-        <li><a href="https://github.com/ahmadabracadabra/IntroProgramming" target="_blank">Intro to Programming and Advanced Programming</a></li>
-        <li><a href="https://github.com/ahmadabracadabra/AlgoAnalysis" target="_blank">Algorithm Analysis and Design</a></li>
-        <li><a href="https://github.com/ahmadabracadabra/CompOrg-Sys" target="_blank">Computer Organization and Systems</a></li>
-        <li><a href="https://github.com/ahmadabracadabra/Resume" target="_blank">Resume</a></li>
-    </ul>
-</section>
-
-<section>
-    <h2>Resume</h2>
-    <a href="assetimage/Ahmad-Abraham-Resume.pdf" download>
-        <img src="assetimage/ResumeScreenshot.png" alt="Resume Screenshot" width="100%" style="max-width: 600px; cursor: pointer;" />
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand px-4" href="#">
+      <span class="brand-title ms-2">Ahmad Abraham</span>
     </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarText">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ms-auto px-3">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Home Section -->
+<section class="showcase" id="home">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <h1 class="display-3 fw-bold">Ahmad Abraham</h1>
+        <p class="lead">Aspiring Software Developer | Open to Opportunities</p>
+        <a href="assetimage/Ahmad-Abraham-Resume.pdf" target="_blank" class="btn btn-primary btn-lg me-3">Download Resume</a>
+        <div class="icon-links mt-4">
+          <a href="https://github.com/ahmadabracadabra" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/ahmadabraham" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-md-5 text-center">
+        <img src="assetimage/ahmad2.jpg" alt="Your Photo" class="showcase-img">
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- About Section -->
+<section id="about" class="p-5">
+  <div class="container">
+    <h2>About Me</h2>
+    <p class="lead">
+      Hi, I'm Ahmad! I'm a Computer Science student at Saint Xavier University, graduating May 2025. I’m passionate about building software solutions and exploring new technologies. Beyond coding, I enjoy gardening, design, video editing, and financial planning. These hobbies help me stay creative, organized, and inspired.
+    </p>
+  </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="p-5">
+  <div class="container">
+    <h2 class="mb-5 text-start">Portfolio</h2>
+
+    <!-- Project One -->
+    <div class="portfolio-project py-5">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="assetimage/PlannerImage.jpg" alt="Project One Image" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+          <h3>Bloomprint</h3>
+          <p>A native garden planner that lets users design, arrange, and visualize their own garden layouts using native plant data.</p>
+          <a href="https://github.com/ahmadabracadabra/Bloomprint" target="_blank" class="btn btn-outline-dark me-2">GitHub</a>
+          <button class="btn btn-primary" onclick="openVideo('assetimage/bloomprintWalkthrough.mp4')">Live Demo</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Two -->
+    <div class="portfolio-project py-5">
+      <div class="row align-items-center flex-md-row-reverse">
+        <div class="col-md-6">
+        <img id="largeImage" src="assetimage//dashboardss.png" alt="Project Two Image" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+          <h3>Student Productivity Website</h3>
+          <p>A centralized platform that combines task tracking, messaging, calendar events, and budget tools for students and professionals.</p>
+          <a href="https://github.com/ahmadabracadabra/CapstoneProject" target="_blank" class="btn btn-outline-dark me-2">GitHub</a>
+          <button class="btn btn-primary" onclick="openVideo('assetimage/sadasWalkthrough.mp4')">Live Demo</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Three -->
+    <div class="portfolio-project py-5">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="assetimage/webscraperss.png" alt="Project Three Image" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+          <h3>Webscraper</h3>
+          <p>A Python-based web scraper that extracts data from e-commerce websites and compiles it into structured CSV file.</p>
+          <a href="https://github.com/ahmadabracadabra/Webscraper" target="_blank" class="btn btn-outline-dark me-2">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="p-5">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:ahmadabra0621@gmail.com" class="text-dark">ahmadabra0621@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/ahmadabracadabra" target="_blank" class="text-dark">github.com/ahmadabracadabra</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/ahmadabraham" target="_blank" class="text-dark">linkedin.com/in/ahmadabraham</a></p>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark">
+      <div class="modal-header border-0">
+        <h5 class="modal-title text-white" id="videoModalLabel">Live Demo</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+        <video id="demoVideo" controls style="width: 100%;">
+          <source src="" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  let imageIndex = 0;
+  const images = [
+    "assetimage/dashboardss.png",
+    "assetimage/calendarss.png",
+    "assetimage/messagesss.png"
+  ];
+
+  function changeImage() {
+    imageIndex = (imageIndex + 1) % images.length;
+    document.getElementById('largeImage').src = images[imageIndex];
+  }
+
+  setInterval(changeImage, 3000);
+</script>
+
+<script>
+  function openVideo(videoSrc) {
+    const video = document.getElementById("demoVideo");
+    video.src = videoSrc;
+    const modal = new bootstrap.Modal(document.getElementById('videoModal'));
+    modal.show();
+
+    // Stop the video when modal is closed
+    document.getElementById('videoModal').addEventListener('hidden.bs.modal', function () {
+      video.pause();
+      video.currentTime = 0;
+    });
+  }
+</script>
+
+
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
